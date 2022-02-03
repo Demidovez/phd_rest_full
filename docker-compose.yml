@@ -9,3 +9,5 @@ services:
     command: "wine phd_api.exe"
     ports:
       - 5104:5104
+    volumes:
+      - /etc/localtime:/etc/localtime:ro

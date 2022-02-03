@@ -4,26 +4,24 @@ namespace phd_api.Models
 {
     public class TagValue
     {
-        public long timestamp;
-        public string date;
-        public Double value;
-        public short confidence;
+        public DateTime date;
+        public Double val;
+        public short conf;
 
-        public TagValue(long timestamp, string date, Double value, short confidence)
+        public TagValue(DateTime date, Double value, short confidence)
         {
-            this.timestamp = timestamp;
             this.date = date;
-            this.value = value;
-            this.confidence = confidence;
+            this.val = value;
+            this.conf = confidence;
         }
 
-        public long getTimestamp() { return timestamp; }
-        public string getDate() { return date; }
-        public Double getValue() { return value; }
-        public short getConfidence() { return confidence; }
-        public void setTimestamp(long timestamp) { this.timestamp = timestamp; }
-        public void setDate(string date) { this.date = date; }
-        public void setValue(Double value) { this.value = value;}
-        public void setConfidence(short confidence) { this.confidence = confidence; }
+        public DateTime getDate() { return date; }
+        public Double getValue() { return val; }
+        public short getConfidence() { return conf; }
+        public void setDate(DateTime date) { 
+            this.date = date; 
+        }
+        public void setValue(Double value) { this.val = value;}
+        public void setConfidence(short confidence) { this.conf = confidence; }
     }
 }
