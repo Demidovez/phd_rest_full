@@ -6,5 +6,6 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+    command: "wine phd_api.exe"
     ports:
       - 5104:5104
