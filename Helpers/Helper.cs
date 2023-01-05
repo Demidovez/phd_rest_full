@@ -18,5 +18,10 @@ namespace phd_api.Helpers
             
             return DateTimeOffset.FromUnixTimeMilliseconds(timestampLong).DateTime.ToString("dd-MMM-yyyy HH:mm:ss", new CultureInfo("en-US"));
         }
+
+         public static string DateTimeToDateStr(DateTime date)
+        {            
+            return date.ToString("dd-MMM-yyyy HH:mm:ss", new CultureInfo("en-US"));
+        }
     }
 }
